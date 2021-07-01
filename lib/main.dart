@@ -1,3 +1,9 @@
+/*
+**  lib/main.dart
+**
+**  create by kylee
+*/
+
 import 'package:flutter/material.dart';
 import 'package:flutter_kakao_login/screen/loding_screen.dart';
 

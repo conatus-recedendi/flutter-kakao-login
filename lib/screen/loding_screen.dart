@@ -1,5 +1,13 @@
-import 'package:flutter/material.dart';
+/*
+**  lib/screen/loding_screen.dart
+**
+**  This is for Splash Screen.
+**  create by kylee
+*/
+
 import 'dart:async';
+
+import 'package:flutter/material.dart';
 import 'package:flutter_kakao_login/screen/login_screen.dart';
 
 class LodingScreen extends StatefulWidget {
@@ -17,11 +25,13 @@ class _LodingScreen extends State<LodingScreen> {
   }
 
   startTimer() async {
-    var duration = Duration(seconds: 4);
+    // wait a few seconds.
+    var duration = Duration(seconds: 2);
     return Timer(duration, route);
   }
 
   route() {
+    // move to the next screen
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -32,6 +42,7 @@ class _LodingScreen extends State<LodingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // struct of loding screen
     return Scaffold(
       backgroundColor: Colors.blueAccent,
       body: Center(

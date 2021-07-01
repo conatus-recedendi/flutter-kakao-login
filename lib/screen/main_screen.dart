@@ -1,3 +1,9 @@
+/*
+**  lib/screen/main_screen.dart
+**
+**  create by kylee
+*/
+
 import 'package:flutter/material.dart';
 import 'package:flutter_kakao_login/screen/login_screen.dart';
 import 'package:kakao_flutter_sdk/all.dart';
@@ -22,6 +28,7 @@ class _MainScreen extends State<MainScreen> {
   }
 
   _getUser() async {
+    // get user data from kakao
     final User user = await UserApi.instance.me();
 
     setState(() {
@@ -31,6 +38,7 @@ class _MainScreen extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // set main screen.
     return Scaffold(
       appBar: AppBar(
         title: Text('Main Screen'),
@@ -51,10 +59,10 @@ class _MainScreen extends State<MainScreen> {
   }
 
   _logout() async {
+    // the behavior when the logout button is clicked
     try {
       final code = await UserApi.instance.logout();
-      print('2342');
-      print(code.toString());
+
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => LoginScreen()),
