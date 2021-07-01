@@ -2,10 +2,6 @@
 
 A flutter demo for kakao login.
 
-## Getting Started
+## 참고
 
-1. Add 
-
-## Problems
-
-- PushReplacement 
+[내용 정리](https://www.notion.so/Day04-Kakao-Login-5e751ccade734bb189a346d68555ec40)

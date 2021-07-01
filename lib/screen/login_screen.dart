@@ -30,8 +30,7 @@ class _LoginScreen extends State<LoginScreen> {
   Widget build(BuildContext context) {
     // your clientId can set by the following site.
     // https://developers.kakao.com/docs/latest/ko/getting-started/sdk-android-v1#key-hash
-    KakaoContext.clientId =
-        "<native-app-key>; // Should not be commmited!
+    KakaoContext.clientId = "<native-app-key>"; // Should not be commmited!
 
     return Scaffold(
       appBar: AppBar(
