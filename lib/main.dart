@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kakao_login/screen/login_screen.dart';
+import 'package:flutter_kakao_login/screen/loding_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: LodingScreen(),
     );
   }
 }
